@@ -1,14 +1,28 @@
 import React from "react"
+import styled from "styled-components"
+import Layout from "../components/Theme/layout"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+const StyledSection = styled.section`
+  width: 100%;
+  max-width: 62.5rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  height: auto;
+  h1 {
+    font-size: 1.5rem;
+  }
+`
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+const NotFoundPage = () => {
+
+  return (
+    <Layout>
+    <StyledSection>
+        <h1 data-testid="heading">NOT FOUND</h1>
+        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    </StyledSection>
+    </Layout>
+  )
+}
 
 export default NotFoundPage
