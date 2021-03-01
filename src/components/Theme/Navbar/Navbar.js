@@ -16,7 +16,7 @@ const Navbar = () => {
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
       >
-        {navbarOpen ? <Hamburger theme={theme} open /> : <Hamburger />}
+        {navbarOpen ? <Hamburger theme={theme} open /> : <Hamburger theme={theme} />}
       </Toggle>
       {navbarOpen ? (
         <Navbox theme={theme}>
